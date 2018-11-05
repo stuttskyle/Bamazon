@@ -78,7 +78,7 @@ function findItemID(arg) {
         updateStock();
       } else {
         console.log("Insufficient amount in stock!");
-        console.log(`This item has : ${storeStock[0]}`);
+        console.log(`This item has : ${storeStock[0]} in stock!`);
         connection.end();
       }
     }
