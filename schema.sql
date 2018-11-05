@@ -4,12 +4,14 @@ CREATE database bamazonDB;
 USE bamazonDB;
 
 CREATE TABLE products (
-    item_id INT(11) AUTO_INCREMENT NULL PRIMARY KEY,
+    item_id INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
     product_name VARCHAR(100) NULL,
     department_name VARCHAR(100) NULL,
     price FLOAT (7,2) NULL,
     stock_quantity INT NULL
 );
+
+SELECT * FROM bamazondb.products;
 
 -- ALTER TABLE products AUTO_INCREMENT = 1000;
 
